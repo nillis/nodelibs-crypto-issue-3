@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "test": "jspm bundle index.js bundle.js --skip-source-maps"
+  },
+  "jspm": {
+    "devDependencies": {
+      "typescript": "npm:typescript@2.0.6"
+    },
+    "overrides": {
+      "npm:safe-buffer@5.0.1": {
+        "browser": "index.js"
+      }
+    }
+  }
+}
